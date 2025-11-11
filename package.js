@@ -1,0 +1,27 @@
+{
+
+  "name": "gemini-proxy",
+
+  "version": "1.0.0",
+
+  "type": "module",
+
+  "scripts": {
+
+    "start": "node server.js",
+
+    "dev": "nodemon server.js"
+
+  },
+
+  "dependencies": {
+
+    "express": "^4.18.2",
+
+    "node-fetch": "^3.4.0",
+
+    "cors": "^2.8.5"
+
+  }
+
+}
