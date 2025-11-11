@@ -1,0 +1,156 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: radial-gradient(circle at top left, #0a0f1e, #050812 80%);
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.08);
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00ffff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px #00ffff33;
+}
+
+/* ===== TEXTO DE INSTRUÇÃO ===== */
+label {
+  font-size: 0.95rem;
+  color: #cfd8dc;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+  width: 100%;
+  height: 120px;
+  background: #0d111f;
+  border: 1px solid #1a2138;
+  border-radius: 10px;
+  color: #e6e6e6;
+  padding: 12px;
+  resize: none;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 8px #00ffff55;
+}
+
+/* ===== CONTROLES (SELECT + BOTÃO) ===== */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+select, button {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* SELECT (modelo da IA) */
+select {
+  flex: 1;
+  background: #0d111f;
+  color: #b0c4de;
+  padding: 0 10px;
+  border: 1px solid #1a2138;
+}
+
+select:focus {
+  outline: none;
+  border-color: #00ffff;
+  box-shadow: 0 0 8px #00ffff55;
+}
+
+/* BOTÃO */
+button {
+  background: linear-gradient(90deg, #00ffff, #0066ff);
+  color: #000;
+  font-weight: 600;
+  padding: 0 18px;
+  box-shadow: 0 0 10px #00ffff66;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffffaa;
+}
+
+/* ===== BLOCO DE RESPOSTA ===== */
+.response-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.response-box h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.response-box p {
+  font-size: 0.95rem;
+  color: #b0bec5;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ffff55;
+  border-radius: 10px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}

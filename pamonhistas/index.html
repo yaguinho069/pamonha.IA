@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Os Pamonhistas .IA</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>pamonha.IA</h1>
+
+
+    <label for="prompt">Escreva sua pergunta:</label>
+
+    <textarea id="prompt" rows="6" placeholder="Pergunte algo à IA..."></textarea>
+
+
+    <div class="controls">
+
+      <select id="model">
+
+        <option value="gemini-1.5-flash">gemini-1.5-flash</option>
+
+        <option value="gemini-1.5-pro">gemini-1.5-pro</option>
+
+      </select>
+
+      <button id="sendBtn">Enviar</button>
+
+    </div>
+
+
+    <section id="output" class="output">
+
+      <h2>Resposta:</h2>
+
+      <pre id="response">Aguardando...</pre>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
